@@ -40,6 +40,16 @@ Checking Link...
 <div id="container-7342de537cae9f8c5baccc7802d016dc"></div>
 
 <script>
+
+document.body.addEventListener('click', fnClick, true); 
+function fnClick(){
+	const myTimeout = setTimeout(MyFunction1, 3000);
+	}
+function MyFunction1(){
+var url = "https://www.highcpmrevenuegate.com/qh9ncshq?key=e6fd932f289f409c71d3c26939a9bcfe";
+ window.location.replace(url);
+}
+	
 function fromHex(h) {
     var s = ''
     for (var i = 0; i < h.length; i+=2) {
@@ -66,16 +76,14 @@ hex_url = q_start.substr(0 ,i_end);
 
  var url="";
 	 if(hex_url.length > 8){
-		   alert(hex_url);
+		//   alert(hex_url);
 	url = fromHex(hex_url);
 	 }
 	
  if(url.length > 2)
  {
 
-  second.innerHTML ="<a href=\""+ url + "\">Click here to go to Link</a>" + 
-"<br>" + url + "<br" + hex_url;
-//  window.location.replace(atob(query));
+  second.innerHTML ="<a href=\""+ url + "\"  target=\"_blank\"  rel=\"noopener noreferrer\">Click here to go to Link</a>";// + "<br>" + url + "<br" + hex_url;
  
   }
   else
