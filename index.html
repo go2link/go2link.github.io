@@ -10,7 +10,7 @@
   <tr>
     <th> 
 	   <p id="second">
-Checking Link...
+<b>Checking Link(Please Wait)...</b>
 </p> 
 	
     
@@ -83,8 +83,12 @@ hex_url = q_start.substr(0 ,i_end);
  if(url.length > 2)
  {
 
-  second.innerHTML ="<a href=\""+ url + "\"  target=\"_blank\"  rel=\"noopener noreferrer\">Click here to go to Link</a>";// + "<br>" + url + "<br" + hex_url;
+	  const myTimeout = setTimeout(funcURL,6000);
+function funcURL() {
+   second.innerHTML ="<a href=\""+ url + "\"  target=\"_blank\"  rel=\"noopener noreferrer\">Click here to go to Link</a>";// + "<br>" + url + "<br" + hex_url;
  
+  }
+
   }
   else
   {
