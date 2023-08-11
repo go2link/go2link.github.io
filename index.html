@@ -54,16 +54,20 @@ var i_end=queryString.indexOf("pqx786786");
 var q_start="";
 	var hex_url="";
 	
- if(i_start >=0)
+ if(i_start >=0){
   q_start = queryString.substr(i_start+9);
- if(i_end >= 9 && q_start.length > 11)
+ }
+ if(i_end >= 9 && q_start.length > 11){
 hex_url = q_start.substr(0 ,i_end);
+ }
 	
  var second = document.getElementById("second");
 
  var url="";
-	 if(hex_url.length > 8)
+	 if(hex_url.length > 8){
+		   alert(hex_url);
 	url = fromHex(hex_url);
+	 }
 	
  if(url.length > 2)
  {
