@@ -8,7 +8,13 @@
 
 <table width="100%">
   <tr>
-    <th>   Click here to go to Link</th>
+    <th> 
+	   <p id="second">
+Checking Link...
+</p> 
+	
+    
+    </th>
 
     <th>
 	 
@@ -32,6 +38,52 @@
 <br>
 <script async="async" data-cfasync="false" src="//pl20297588.highcpmrevenuegate.com/7342de537cae9f8c5baccc7802d016dc/invoke.js"></script>
 <div id="container-7342de537cae9f8c5baccc7802d016dc"></div>
+
+<script>
+function fromHex(h) {
+    var s = ''
+    for (var i = 0; i < h.length; i+=2) {
+        s += String.fromCharCode(parseInt(h.substr(i, 2), 16))
+    }
+    return decodeURIComponent(escape(s))
+}
+	
+  const queryString = window.location.search;
+ var i_start=query.indexOf("RTX786786");
+var i_end=query.indexOf("PQX786786");
+var q_start="";
+	var hex_url="";
+	
+ if(i_start >=0)
+  q_start = queryString.substr(i_start+9);
+ if(i_end >= 9 && q_start.length > 11)
+hex_url = q_start.substr(0 ,i_end);
+	
+ var second = document.getElementById("second");
+
+ var url="";
+	 if(hex_url.length > 8)
+	url = fromHex(hex_url);
+	
+ if(url.length > 2)
+ {
+
+  second.innerHTML ="<a href=\""+ url + "\">Click here to go to Link</a>" ;
+//  window.location.replace(atob(query));
+ 
+  }
+  else
+  {
+   second.innerHTML ="<a href=\"https://www.highcpmrevenuegate.com/qh9ncshq?key=e6fd932f289f409c71d3c26939a9bcfe\">Link check failed(click here to try)?</a>";
+
+
+	  const myTimeout = setTimeout(funcDirectlink, 20000);
+function funcDirectlink() {
+  window.location.replace("https://www.highcpmrevenuegate.com/qh9ncshq?key=e6fd932f289f409c71d3c26939a9bcfe");
+  }
+	  
+  }
+  </script>
 	    
     </body>
     </html>
