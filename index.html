@@ -1,81 +1,28 @@
-    <!doctype html>
-    <html>
-    <head>
-<style>
-body {
-  background-color: Gold;
-}
-</style>
-	    
-    <title>Go To Link</title>
-    </head>
-    <body>
-
-<p id="second" align="center" style="background-color:FloralWhite;">
-<b style="color:DarkRed;">Checking Link(Please Wait)...</b>
-</p> 
-	<br>
- 	   <p id="second2" align="center" style="color:#008000;">
-       
-<b>Help:<br>1.Click on I'M A HUMAN (Click many times if needed).
-		   <br>
-		2.Click Get Link (Click many times if needed).</b>
+ <!doctype html>
+<html>
+<head>
+<style>body{background-color:Gold}</style>
+<title>Go To Link</title>
+</head>
+<body>
+<p id=second align=center style=background-color:#fffaf0>
+<b style=color:#8b0000>Checking Link(Please Wait)...</b>
 </p>
-
-
 <br>
-
-
-<script>
-
-
-	
-function fromHex(h) {
-    var s = ''
-    for (var i = 0; i < h.length; i+=2) {
-        s += String.fromCharCode(parseInt(h.substr(i, 2), 16))
-    }
-    return decodeURIComponent(escape(s))
-}
-	
-  const queryString = window.location.search;
- var i_start=queryString.indexOf("rtx786786");
-var i_end=0;
-var q_start="";
-	var hex_url="";
-	
- if(i_start >=0){
-  q_start = queryString.substr(i_start+9);
-	 i_end=q_start.indexOf("pqx786786");
- }
- if(i_end >= 9 && q_start.length > 11){
-hex_url = q_start.substr(0 ,i_end);
- }
-	
- var second = document.getElementById("second");
-
- var url="";
-	 if(hex_url.length > 8){
-		//   alert(hex_url);
-	url = fromHex(hex_url);
-	 }
-	
- if(url.length > 2)
- {
-
-
-   second.innerHTML ="<a href=\""+ url + "\" rel=\"noopener noreferrer\">Click here to go to Link</a>";// + "<br>" + url + "<br" + hex_url;
-
-  }
-  else
-  {
-   second.innerHTML ="<b style=\"color:Red;\">Link check failed.</b>";  
-  }
-  </script>
-	<script type="text/javascript">
-    var ouo_token = 'aJSZc04G';
-    var exclude_domains = ['yahoo.com', 'google.com']; 
-</script>
-<script src="//cdn.ouo.io/js/full-page-script.js"></script>    
-    </body>
-    </html>
+<p id=second2 align=center style=color:green>
+<b>Help:<br>1.Click on I'M A HUMAN (Click many times if needed).
+<br>
+2.Click Get Link (Click many times if needed).</b>
+</p>
+<br>
+<p id=second_adfoc align=center style=background-color:#fffaf0>
+<b style=color:#8b0000>Checking Link(Please Wait)...</b>
+</p>
+<br>
+<p id=second_adfoc2 align=center style=color:green>
+<b>Help:<br>1.Click on Skip (Wait for timer).
+</b></p>
+<br>
+<script>function fromHex(e){for(var r="",n=0;n<e.length;n+=2)r+=String.fromCharCode(parseInt(e.substr(n,2),16));return decodeURIComponent(escape(r))}const queryString=window.location.search;var i_start=queryString.indexOf("rtx786786"),i_end=0,q_start="",hex_url="";i_start>=0&&(i_end=(q_start=queryString.substr(i_start+9)).indexOf("pqx786786")),i_end>=9&&q_start.length>11&&(hex_url=q_start.substr(0,i_end));var second=document.getElementById("second"),second_adfoc=document.getElementById("second_adfoc"),url="";hex_url.length>8&&(url=fromHex(hex_url)),url.length>2?(second.innerHTML='<a href="http://ouo.io/qs/aJSZc04G?s='+url+'" rel="noopener noreferrer">Click here to go to Link(1)</a>',second_adfoc.innerHTML='<a href="http://adfoc.us/serve/sitelinks/?id=823394&url='+url+'" rel="noopener noreferrer">Click here to go to Link(2)</a>'):(second.innerHTML='<b style="color:Red;">Link check failed.</b>',second_adfoc.innerHTML='<b style="color:Red;">Link check failed.</b>')</script>
+</body>
+</html>
